@@ -11,7 +11,7 @@ gulp.task("css", function() {
 	return gulp.src( '_assets/css/**/*.css' )
 		// .pipe( sass().on('error', sass.logError) )
 		.pipe( autoprefixer() )
-		.pipe( gulp.dest( './docs/css/' ) )
+		.pipe( gulp.dest( './docs/css' ) )
 		.pipe( browserSync.stream({ match: '**/*.css' }) )
 	;
 });
@@ -25,7 +25,7 @@ gulp.task("jekylldev", function() {
 
 // Production
 gulp.task("jekyllprod", function() {
-	return cp.spawn("bundle", ["exec", "jekyll", "build --baseurl /portfolio"], { stdio: "inherit", shell: true });
+	return cp.spawn("bundle", ["exec", "jekyll", "build --baseurl /portfolio/"], { stdio: "inherit", shell: true });
 });
 
 gulp.task("watch", function() {
