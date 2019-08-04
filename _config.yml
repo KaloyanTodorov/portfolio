@@ -44,3 +44,17 @@ exclude:
   - gulpfile.js
   - package.json
   - package-lock.json
+
+navigation:
+  - url: 
+    title: Home
+  - url: work/
+    title: Work
+  - url: education/
+    title: Education
+  - url: quotes/
+    title: Quotes
+  - url: fun/
+    title: Fun
+  - url: contacts/
+    title: Contacts

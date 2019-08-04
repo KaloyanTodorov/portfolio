@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
 </head>
 <body>
-    {{ content }}
+    <div class="site">
+        {% include header.html location="header" %}
+
+        <main class="site-main">
+            <p>main body</p>
+            {{ content }}
+        </main>
+
+        {% include sidebar.html %}
+
+        {% include footer.html location="footer" %}
+    </div>
 </body>
 </html>

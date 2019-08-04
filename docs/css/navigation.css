@@ -1,0 +1,49 @@
+nav {
+    display: flex;
+}
+
+nav.location-header {
+    
+}
+
+nav.location-footer {
+    font-size: 0.7em;
+}
+
+nav ul {
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0.8em;
+}
+
+nav li {
+    list-style: none outside;
+    border: var(--color-border-main);
+    margin: 0.5em;
+    display: flex;
+}
+
+nav a {
+    padding: 0.5em 1em;
+}
+
+nav li:hover,
+nav li.selected,
+nav a:hover,
+nav a:focus,
+nav li.selected a {
+    color: var(--color-border-default);
+    font-weight: 700;
+    border-color: var(--color-border-default);
+}
+
+.site-footer nav li {
+    border: 0;
+    margin: 0;
+    border-right: var(--color-border-main);
+}
+
+.site-footer nav li:last-child {
+    border-right: 0;
+}

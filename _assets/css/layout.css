@@ -1,0 +1,11 @@
+.site {
+    max-width: var(--layout-main-width);
+    padding: 0 2em;
+    margin-top: 2em;
+    margin-left: auto;
+}
+
+.site-footer {
+    bottom: 0;
+    width: 100%;
+}

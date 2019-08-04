@@ -1,0 +1,9 @@
+<nav class="location-{{ include.location }}">
+    <ul>
+        {% for navitem in site.navigation %}
+        <li {% if navitem.title == page.title %} class="selected" {% endif %}>
+            <a href="{{ site.baseurl }}/{{ navitem.url }}">{{ navitem.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>

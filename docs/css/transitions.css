@@ -1,0 +1,4 @@
+nav li:hover,
+nav a:hover {
+    transition: border-color 0.5s ease-in, color 0.5s ease-in;
+}
