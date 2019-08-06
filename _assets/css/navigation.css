@@ -1,5 +1,7 @@
 nav {
     display: flex;
+    align-items: center;
+    flex-grow: 1;
 }
 
 nav.location-header {
@@ -19,31 +21,36 @@ nav ul {
 
 nav li {
     list-style: none outside;
-    border: var(--color-border-main);
-    margin: 0.5em;
+    margin: 0.2em;
     display: flex;
 }
 
 nav a {
+    border: var(--color-border-main);
     padding: 0.5em 1em;
 }
 
-nav li:hover,
-nav li.selected,
 nav a:hover,
-nav a:focus,
 nav li.selected a {
     color: var(--color-border-default);
     font-weight: 700;
     border-color: var(--color-border-default);
 }
 
-.site-footer nav li {
+nav a:focus,
+nav li.selected a:focus {
+    color: var(--color-border-default);
+    border-color: var(--color-links-default);
+    outline: none;
+}
+
+.site-footer nav a,
+.site-footer nav .selected a {
     border: 0;
     margin: 0;
     border-right: var(--color-border-main);
 }
 
-.site-footer nav li:last-child {
-    border-right: 0;
+.site-footer nav li:last-child a {
+    border-right: none;
 }
