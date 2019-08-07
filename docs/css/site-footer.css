@@ -1,9 +1,0 @@
-.site-footer {
-    content: '';
-    border-top: var(--color-border-main);
-    padding-top: 0.5em;
-}
-
-.site-footer p {
-    padding-bottom: 0.8em;
-}

@@ -1,7 +1,7 @@
-<nav class="location-{{ include.location }}">
+<nav class="site-navbar navbar-{{ include.location }}">
     <ul>
         {% for navitem in site.navigation %}
-        <li {% if navitem.title == page.title %} class="selected" {% endif %}>
+        <li {% if navitem.title == page.title %} class="active-page" {% endif %}>
             <a href="{{ site.baseurl }}/{{ navitem.url }}">{{ navitem.title }}</a>
         </li>
         {% endfor %}
