@@ -1,0 +1,13 @@
+.site-header {
+    display: flex;
+    border-bottom: var(--color-border-main);
+}
+
+.site-header h1,
+.site-header p {
+    flex-shrink: 0;
+}
+
+.site-header .navbar{
+    margin-left: auto;
+}
