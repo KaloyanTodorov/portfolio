@@ -58,3 +58,20 @@ navigation:
     title: Fun
   - url: contacts/
     title: Contacts
+
+sociallinks:
+  - title: linkedin
+    url: https://www.linkedin.com/in/kaloyan-todorov-aa723952/
+    icon: fab fa-linkedin
+  - title: github
+    url: https://github.com/KaloyanTodorov
+    icon: fab fa-github
+  - title: facebook
+    url: https://facebook.com/kpetev
+    icon: fab fa-facebook
+  - title: instagram
+    url: https://instagram.com/kizzata/
+    icon: fab fa-instagram
+  - title: twitter
+    url: https://twitter.com/kicata
+    icon: fab fa-twitter

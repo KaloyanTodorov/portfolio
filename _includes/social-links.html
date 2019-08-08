@@ -1,0 +1,8 @@
+<p>Hit me on social media:</p>
+<ul class="social-links">
+    {% for social in site.sociallinks %}
+    <li>
+        <a href="{{ social.url }}" target="_blank"><i class="{{ social.icon }}"></i></a>
+    </li>
+    {% endfor %}
+</ul>

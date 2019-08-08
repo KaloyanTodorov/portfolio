@@ -1,13 +1,14 @@
 .site-header {
     display: flex;
     border-bottom: var(--color-border-main);
+
+    & h1,
+    & p {
+        flex-shrink: 0;
+    }
+    
+    & .navbar{
+        margin-left: auto;
+    }
 }
 
-.site-header h1,
-.site-header p {
-    flex-shrink: 0;
-}
-
-.site-header .navbar{
-    margin-left: auto;
-}
