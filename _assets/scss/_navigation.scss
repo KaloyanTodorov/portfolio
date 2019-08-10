@@ -24,11 +24,15 @@
         margin: 0.2em;
         display: flex;
     }
-    
+
     & a {
-        font-size: 0.8em;
+        font-size: 1.4em;
         border: var(--color-border-main);
         padding: 0.5em 1em;
+        
+        @include mq( tablet-landscape ) {
+            font-size: 0.8em;
+        }
     }
     
     & a:hover,
@@ -50,20 +54,26 @@
         
     }
 
-    .site-footer & {
+    .site-footer &.navbar-footer {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 0.5fr;
+        justify-content: end;
 
         ul {
             margin: 0 auto;
-
+            
             display: grid;
+            justify-items: end;
             grid-row: span 1;
-    
-            li {
-                justify-content: center;
-            }
 
+        }
+
+        @include mq( tablet-landscape ) {
+            justify-content: center;
+            
+            ul {
+                justify-items: center;
+            }
         }
     }
     
