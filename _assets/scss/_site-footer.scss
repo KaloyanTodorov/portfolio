@@ -2,8 +2,12 @@
     border-top: var(--color-border-main);
     padding-top: 2em;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 0.5fr);
     align-items: center;
+
+    & .site-navbar {
+        grid-row: span 2;
+    }
 
     @include mq( tablet-landscape ) {
         grid-template-columns: repeat(3, 1fr);
@@ -14,6 +18,10 @@
     }
 
     @include mq( phone-large ) {
+        & p {
+            grid-row: span 2;
+        }
+
         .social-links-container {
             grid-column: span 2;
             display: flex;

@@ -217,14 +217,18 @@ blockquote .author:before {
   border-top: var(--color-border-main);
   padding-top: 2em;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 0.5fr);
   align-items: center; }
+  .site-footer .site-navbar {
+    grid-row: span 2; }
   @media (min-width: 961px) {
     .site-footer {
       grid-template-columns: repeat(3, 1fr); } }
   .site-footer p {
     padding-bottom: 0.8em; }
   @media (max-width: 640px) {
+    .site-footer p {
+      grid-row: span 2; }
     .site-footer .social-links-container {
       grid-column: span 2;
       display: flex; } }
