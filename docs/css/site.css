@@ -10,7 +10,7 @@
   --color-body-default: #EEE;
   --color-links-default: #EEE;
   --color-border-main: 2px solid var(--color-body-default, #FFF);
-  --color-border-default: #400;
+  --color-border-default: #000;
   --spacing-layout: 2em; }
 
 *, *:before, *:after, ul {
@@ -136,9 +136,9 @@ blockquote .author:before {
       margin-right: 1em;
       font-style: normal; }
     .education li .school {
-      color: #000;
+      color: var(--color-border-default, #000);
       font-weight: 700;
-      border-bottom: 1px solid #FFF;
+      border-bottom: 1px solid var(--color-links-default, #EEE);
       padding-bottom: 0.5em; }
     .education li .edu-timespan:before {
       content: '\f073';
@@ -152,15 +152,42 @@ blockquote .author:before {
     .education li .degree:before {
       content: "Degree: ";
       font-weight: 900;
-      color: #000; }
+      color: var(--color-border-default, #000); }
     .education li .technologies:before {
       content: "Techologies: ";
       font-weight: 900;
-      color: #000; }
+      color: var(--color-border-default, #000); }
     .education li .notes-edu:before {
       content: "Notes: ";
       font-weight: 900;
-      color: #000; }
+      color: var(--color-border-default, #000); }
+
+.work-timeline h2 {
+  padding-left: 1em; }
+
+.timeline {
+  border-left: 2px solid var(--color-border-default, #000);
+  padding: 2em 0; }
+  .timeline li:before {
+    position: absolute;
+    top: 4px;
+    left: calc( -0.5em - 1px);
+    display: block;
+    content: '';
+    width: 1em;
+    height: 1em;
+    background: #EEE;
+    border: 2px solid var(--color-border-default, #000);
+    border-radius: 50%; }
+  .timeline li:nth-child(odd):before {
+    background: #36B; }
+  .timeline li {
+    position: relative;
+    list-style: none outside;
+    padding-left: 2em;
+    padding-bottom: 1em; }
+    .timeline li p {
+      padding-bottom: 0.3em; }
 
 .site-footer {
   border-top: var(--color-border-main);
