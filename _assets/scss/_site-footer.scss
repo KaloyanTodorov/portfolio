@@ -12,4 +12,11 @@
     & p {
         padding-bottom: 0.8em;
     }
+
+    @include mq( phone-large ) {
+        .social-links-container {
+            grid-column: span 2;
+            display: flex;
+        }
+    }
 }

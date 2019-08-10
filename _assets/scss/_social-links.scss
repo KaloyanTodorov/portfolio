@@ -1,17 +1,23 @@
-.social-links {
-    display: flex;
+.social-links-container {
+    p {
 
-    & li {
-        list-style: none outside;
-        justify-content: space-between;
     }
-
-    & a {
-        padding: 0.5em;
-        font-size: 1.5em;
-
-        &:hover {
-            color: #000;
+    
+    .social-links {
+        display: flex;
+    
+        & li {
+            list-style: none outside;
+            justify-content: space-between;
+        }
+    
+        & a {
+            padding: 0.5em;
+            font-size: 1.5em;
+    
+            &:hover {
+                color: #000;
+            }
         }
     }
 }

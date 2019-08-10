@@ -200,6 +200,10 @@ blockquote .author:before {
       grid-template-columns: repeat(3, 1fr); } }
   .site-footer p {
     padding-bottom: 0.8em; }
+  @media (max-width: 640px) {
+    .site-footer .social-links-container {
+      grid-column: span 2;
+      display: flex; } }
 
 .site-navbar {
   display: flex;
@@ -288,13 +292,13 @@ blockquote .author:before {
 .nav-toggle-button {
   display: none; }
 
-.social-links {
+.social-links-container .social-links {
   display: flex; }
-  .social-links li {
+  .social-links-container .social-links li {
     list-style: none outside;
     justify-content: space-between; }
-  .social-links a {
+  .social-links-container .social-links a {
     padding: 0.5em;
     font-size: 1.5em; }
-    .social-links a:hover {
+    .social-links-container .social-links a:hover {
       color: #000; }
