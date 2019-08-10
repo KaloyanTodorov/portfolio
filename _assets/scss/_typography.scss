@@ -9,19 +9,20 @@
 html {
     box-sizing: border-box;
     font: var(--font-size-main, 14px)/1.5 "Questrial", sans-serif;
+
+    @include mq ( mobile ) {
+        font-size: var(--font-size-big, 16px);
+    }
+
+    @include mq ( tablet-landscape ) {
+        font-size: var(--font-size-bigger, 18px); 
+    }
+    
+    @include mq ( desktop ) {
+        font-size: var(--font-size-biggest, 20px); 
+    }
 }
 
-@media ( min-width: 600px ) {
-    html { font-size: var(--font-size-big, 16px); }
-}
-
-@media ( min-width: 1024px ) {
-    html { font-size: var(--font-size-bigger, 18px); }
-}
-
-@media ( min-width: 1600px ) {
-    html { font-size: var(--font-size-biggest, 20px); }
-}
 
 body, table, form, select, option, input, textarea {
     font: inherit;
@@ -31,7 +32,6 @@ body, table, form, select, option, input, textarea {
 
 .site-title,
 h1, h2, h3, h4, h5, h6 {
-    // font-size: 1em;
     margin-bottom: 0.5em;
     font-weight: normal;
     font-family: 'Arvo', serif;
@@ -51,10 +51,6 @@ a {
 
 p, ul, ol {
     padding-bottom: 1.5em;
-}
-
-ul, ol {
-    padding-left: 2em;
 }
 
 ul ul, ol ul, ul ol, ol ol {

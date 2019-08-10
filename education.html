@@ -2,6 +2,49 @@
 layout: main
 title: Education
 permalink: education/
+education:
+  - timespan: 2019 - Present
+    school: SoftUni
+    degree: JavaScript Developer
+    technologies: VanillaJS, jQuery, Ajax, Async and Promises, SammyJS, Handlebars, Mocha, Bootstrap, CSS, Sass, Jekyll.
+    notes-edu: Refreshing JavaScript and Front-end knowledge.
+  - timespan: 2015 - 2016
+    school: SoftUni
+    degree: Software Development
+    technologies: JavaScript, PHP, Java, C#
+    notes-edu: First steps in programming. Had to drop it because of personal reasons.
+  - tiemspan: 2010 - 2012
+    school: Sofia University
+    degree: MA, Distributed Systems and Mobile technologies
+    technologies: MS Servers configuration, Cisco routers, switches, AP configuration, System administration.
+    notes-edu: Did not finish
+  - timespan: 2006 - 2010
+    school: UNWE (UNSS)
+    degree: BA, Sociology and Social sciences
+  - timespan: 2000 - 2006
+    school: PMG N. Obreshkov Kazanlak
+    technologies: Maths, English, Biology, Chemistry
+
 ---
 
-<p>education</p>
+<h3>Education</h3>
+
+<ul class="education">
+    {% for item in page.education %}
+    <li>
+        <h6 class="school">{{ item.school }}</h6>
+        <p class="edu-timespan">{{ item.timespan }}</p>
+        {% if item.degree %}
+        <p class="degree">{{ item.degree }}</p>
+        {% endif %}
+
+        {% if item.technologies %}
+        <p class="technologies">{{ item.technologies }}</p>
+        {% endif %}
+
+        {% if item.notes-edu %}
+        <p class="notes-edu">{{ item.notes-edu }}</p>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>

@@ -2,6 +2,45 @@
 layout: main
 title: Work
 permalink: work/
+workplaces:
+  - from: September 2018 
+    to: December 2018
+    company: Holler.live
+    position: Javascript Intern
+    description: Participate in Front-end development
+    notes: Techonologies used include ReactJS, git, Jira, Scrum
+  - from: September 2010
+    to: December 2018
+    company: Fly Research
+    position: Survey Scripter
+    description: Designing, creating, testing, launching, managing fieldwork, data checking online marketing reseearch surveys for various clients.
+    notes: CMS's used include Questback, Nebu, Kinesis Panel & Survey, Sawtooth (SSI Web)
+  - from: January 2010
+    to: September 2010
+    company: Map Marketing
+    position: Survey scripter
+    description: Creating, testing online marketing research surveys
+    notes: CMS used Confirmit
+  - from: July 2007
+    to: January 2010
+    company: Map Marketing
+    position: Sample only mananger
+    description: Launch and manage fieldwork for Sample only team USA
+    notes: CMS's used Net-MR, Marsc
 ---
 
-<p>work</p>
+<section>
+  <h2>Work experience</h2>
+  <ol class="timeline">
+      {% for job in page.workplaces %}
+      <li>
+          <h6 class="timespan">
+            <span class="from">{{ job.from }}</span> - <span class="to">{{ job.to }}</span></h6>
+          <p class="company">{{ job.company }}</p>
+          <p class="position">{{ job.position }}</p>
+          <p class="job-description">{{ job.description }}</p>
+          <p class="notes">{{ job.notes }}</p>
+      </li>
+      {% endfor %}
+  </ol>
+</section>

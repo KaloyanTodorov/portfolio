@@ -1,8 +1,14 @@
 .site-footer {
-    content: '';
     border-top: var(--color-border-main);
-    padding-top: 0.5em;
+    padding-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
 
+    @include mq( tablet-landscape ) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
     & p {
         padding-bottom: 0.8em;
     }

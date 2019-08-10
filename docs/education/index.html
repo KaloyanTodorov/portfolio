@@ -9,17 +9,26 @@
 </head>
 <body>
     <div class="site">
-        
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
 <header class="site-header">
     <h1 class="site-title">
         <a href="/">Kaloyan Todorov</a>
     </h1> 
 
-    <nav class="site-navbar navbar-header">
+
+    <label for="nav-toggle" class="nav-toggle-button">
+    <i class="fas fa-bars"></i>
+    <i class="fas fa-times"></i>
+</label>
+<nav class="site-navbar navbar-header">
     <ul>
         
         <li >
             <a href="/portfolio/">Home</a>
+        </li>
+        
+        <li >
+            <a href="/portfolio/about/">About</a>
         </li>
         
         <li >
@@ -28,10 +37,6 @@
         
         <li  class="active-page" >
             <a href="/portfolio/education/">Education</a>
-        </li>
-        
-        <li >
-            <a href="/portfolio/quotes/">Quotes</a>
         </li>
         
         <li >
@@ -47,23 +52,102 @@
 </header>
 
         <main class="site-main">
-            <p>main body</p>
-            <p>education</p>
-        </main>
+            <h3>Education</h3>
 
-        <aside class="site-sidebar">
-    <p>Sidebar</p>
-</aside>
+<ul class="education">
+    
+    <li>
+        <h6 class="school">SoftUni</h6>
+        <p class="edu-timespan">2019 - Present</p>
+        
+        <p class="degree">JavaScript Developer</p>
+        
+
+        
+        <p class="technologies">VanillaJS, jQuery, Ajax, Async and Promises, SammyJS, Handlebars, Mocha, Bootstrap, CSS, Sass, Jekyll.</p>
+        
+
+        
+        <p class="notes-edu">Refreshing JavaScript and Front-end knowledge.</p>
+        
+    </li>
+    
+    <li>
+        <h6 class="school">SoftUni</h6>
+        <p class="edu-timespan">2015 - 2016</p>
+        
+        <p class="degree">Software Development</p>
+        
+
+        
+        <p class="technologies">JavaScript, PHP, Java, C#</p>
+        
+
+        
+        <p class="notes-edu">First steps in programming. Had to drop it because of personal reasons.</p>
+        
+    </li>
+    
+    <li>
+        <h6 class="school">Sofia University</h6>
+        <p class="edu-timespan"></p>
+        
+        <p class="degree">MA, Distributed Systems and Mobile technologies</p>
+        
+
+        
+        <p class="technologies">MS Servers configuration, Cisco routers, switches, AP configuration, System administration.</p>
+        
+
+        
+        <p class="notes-edu">Did not finish</p>
+        
+    </li>
+    
+    <li>
+        <h6 class="school">UNWE (UNSS)</h6>
+        <p class="edu-timespan">2006 - 2010</p>
+        
+        <p class="degree">BA, Sociology and Social sciences</p>
+        
+
+        
+
+        
+    </li>
+    
+    <li>
+        <h6 class="school">PMG N. Obreshkov Kazanlak</h6>
+        <p class="edu-timespan">2000 - 2006</p>
+        
+
+        
+        <p class="technologies">Maths, English, Biology, Chemistry</p>
+        
+
+        
+    </li>
+    
+</ul>
+        </main>
 
         
 <footer class="site-footer">
-    <p>All rights reserved &copy;Kizzata 2019. </p>
+    <p>Designed by Kizzata. All rights reserved &copy;Kizzata 2019.</p>
     
-    <nav class="site-navbar navbar-footer">
+    <label for="nav-toggle" class="nav-toggle-button">
+    <i class="fas fa-bars"></i>
+    <i class="fas fa-times"></i>
+</label>
+<nav class="site-navbar navbar-footer">
     <ul>
         
         <li >
             <a href="/portfolio/">Home</a>
+        </li>
+        
+        <li >
+            <a href="/portfolio/about/">About</a>
         </li>
         
         <li >
@@ -72,10 +156,6 @@
         
         <li  class="active-page" >
             <a href="/portfolio/education/">Education</a>
-        </li>
-        
-        <li >
-            <a href="/portfolio/quotes/">Quotes</a>
         </li>
         
         <li >
@@ -89,30 +169,33 @@
     </ul>
 </nav>
 
+    
+<div class="social-links-container">
     <p>Hit me on social media:</p>
-<ul class="social-links">
-    
-    <li>
-        <a href="https://www.linkedin.com/in/kaloyan-todorov-aa723952/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </li>
-    
-    <li>
-        <a href="https://github.com/KaloyanTodorov" target="_blank"><i class="fab fa-github"></i></a>
-    </li>
-    
-    <li>
-        <a href="https://facebook.com/kpetev" target="_blank"><i class="fab fa-facebook"></i></a>
-    </li>
-    
-    <li>
-        <a href="https://instagram.com/kizzata/" target="_blank"><i class="fab fa-instagram"></i></a>
-    </li>
-    
-    <li>
-        <a href="https://twitter.com/kicata" target="_blank"><i class="fab fa-twitter"></i></a>
-    </li>
-    
-</ul>
+    <ul class="social-links">
+        
+        <li>
+            <a href="https://www.linkedin.com/in/kaloyan-todorov-aa723952/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/KaloyanTodorov" target="_blank"><i class="fab fa-github"></i></a>
+        </li>
+        
+        <li>
+            <a href="https://facebook.com/kpetev" target="_blank"><i class="fab fa-facebook"></i></a>
+        </li>
+        
+        <li>
+            <a href="https://instagram.com/kizzata/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </li>
+        
+        <li>
+            <a href="https://twitter.com/kicata" target="_blank"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+    </ul>
+</div>
 </footer>
     </div>
 </body>

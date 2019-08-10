@@ -2,6 +2,7 @@
 @import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
 
 @import 'variables';
+@import 'mixins';
 
 @import 'typography';
 
@@ -10,8 +11,8 @@
 @import 'layout';
 
 @import 'site-header';
+@import 'site-main';
 @import 'site-footer';
 
 @import 'navigation';
 @import 'social-links';
-

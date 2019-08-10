@@ -1,0 +1,26 @@
+@mixin mq( $point ) {
+    @if $point == desktop-wide {
+        @media (min-width: 1600px) { @content; }
+    }
+    @else if $point == desktop {
+        @media (min-width: 1024px) { @content; }
+    }
+    @else if $point == tablet-landscape {
+        @media (min-width: 961px) { @content; }
+    }
+    @else if $point == mobile {
+        @media (max-width: 960px) { @content; }
+    }
+    @else if $point == tablet-portrait {
+        @media (max-width: 768px) { @content; }
+    }
+    @else if $point == phone-large {
+        @media (max-width: 640px) { @content; }
+    }
+    @else if $point == phone {
+        @media (max-width: 480px) { @content; }
+    }
+    @else if $point == phone-small {
+        @media (max-width: 320px) { @content; }
+    }
+}
