@@ -8,6 +8,7 @@
   --layout-main-width: 50em;
   --background-color-body-default: linear-gradient(90deg, rgba(224,9,9,1) 0%, rgba(252,185,69,1) 100%);
   --color-body-default: #EEE;
+  --color-body-primary: #000;
   --color-links-default: #EEE;
   --color-border-main: 2px solid var(--color-body-default, #FFF);
   --color-border-default: #000;
@@ -136,7 +137,7 @@ blockquote .author:before {
       margin-right: 1em;
       font-style: normal; }
     .education li .school {
-      color: var(--color-border-default, #000);
+      color: var(--color-body-primary, #000);
       font-weight: 700;
       border-bottom: 1px solid var(--color-links-default, #EEE);
       padding-bottom: 0.5em; }
@@ -152,15 +153,15 @@ blockquote .author:before {
     .education li .degree:before {
       content: "Degree: ";
       font-weight: 900;
-      color: var(--color-border-default, #000); }
+      color: var(--color-body-primary, #000); }
     .education li .technologies:before {
       content: "Techologies: ";
       font-weight: 900;
-      color: var(--color-border-default, #000); }
+      color: var(--color-body-primary, #000); }
     .education li .notes-edu:before {
       content: "Notes: ";
       font-weight: 900;
-      color: var(--color-border-default, #000); }
+      color: var(---color-body-primary, #000); }
 
 .work-timeline h2 {
   padding-left: 1em; }
@@ -188,6 +189,29 @@ blockquote .author:before {
     padding-bottom: 1em; }
     .timeline li p {
       padding-bottom: 0.3em; }
+  .timeline .position {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--color-body-primary, #000); }
+  .timeline .company {
+    font-style: italic; }
+  .timeline .job-description {
+    font-size: 0.9em;
+    color: var(--color-body-primary, #000); }
+  .timeline .notes {
+    font-size: 0.9em; }
+  @media (min-width: 961px) {
+    .timeline {
+      margin: 0 10em;
+      position: relative; }
+      .timeline li {
+        padding-bottom: 3em; }
+      .timeline .timespan {
+        position: absolute;
+        top: -1.5em;
+        left: -10em;
+        display: grid;
+        justify-items: end; } }
 
 .site-footer {
   border-top: var(--color-border-main);
