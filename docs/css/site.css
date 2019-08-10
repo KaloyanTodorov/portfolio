@@ -35,7 +35,7 @@ html {
 body, table, form, select, option, input, textarea {
   font: inherit;
   background: var(--background-color-body-default, #EEE);
-  color: var(--color-body-default, #000); }
+  color: var(--color-body-default, #EEE); }
 
 .site-title,
 h1, h2, h3, h4, h5, h6 {
@@ -75,6 +75,10 @@ ul ul, ol ul, ul ol, ol ol {
 ol > li > ol > li {
   list-style-type: lower-roman; }
 
+section {
+  margin-top: 1em;
+  padding-bottom: 2em; }
+
 blockquote {
   padding: 1rem; }
 
@@ -94,6 +98,20 @@ blockquote .author:before {
 
 .social-links a:hover {
   transition: color 0.3s ease-in; }
+
+.button:hover {
+  transition: border-color 0.3s ease-out, color 0.4s ease-out; }
+
+.button {
+  font-weight: 600;
+  padding: 0.5em 1em;
+  color: #EEE;
+  border: 3px solid #000;
+  border-radius: 0.3em; }
+
+.button:hover {
+  color: #000;
+  border-color: #CCC; }
 
 .site {
   max-width: var(--layout-main-width);
@@ -118,6 +136,16 @@ blockquote .author:before {
 
 .site-main {
   padding: 1.5em 0; }
+  .site-main section:last-child {
+    border: none; }
+
+.page-home .print-resume-all,
+.page-print .print-resume-all {
+  display: none; }
+
+section {
+  padding-left: 2em;
+  border-bottom: 2px solid #EEE; }
 
 .education {
   display: grid;

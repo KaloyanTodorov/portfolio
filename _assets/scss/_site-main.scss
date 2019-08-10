@@ -1,5 +1,19 @@
 .site-main {
     padding: 1.5em 0;
+    
+    section:last-child {
+        border: none;
+    }
+}
+
+.page-home .print-resume-all,
+.page-print .print-resume-all {
+    display: none;
+}
+
+section {
+    padding-left: 2em;
+    border-bottom: 2px solid #EEE;
 }
 
 .education {

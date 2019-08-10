@@ -1,0 +1,23 @@
+<section class="education-section">
+    <h3>Education</h3>
+    
+    <ul class="education">
+        {% for item in site.education %}
+        <li>
+            <h6 class="school">{{ item.school }}</h6>
+            <p class="edu-timespan">{{ item.timespan }}</p>
+            {% if item.degree %}
+            <p class="degree">{{ item.degree }}</p>
+            {% endif %}
+    
+            {% if item.technologies %}
+            <p class="technologies">{{ item.technologies }}</p>
+            {% endif %}
+    
+            {% if item.notes-edu %}
+            <p class="notes-edu">{{ item.notes-edu }}</p>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+</section>

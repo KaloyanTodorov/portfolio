@@ -1,0 +1,15 @@
+<section class="work-timeline">
+    <h2>Work experience</h2>
+    <ol class="timeline">
+        {% for job in site.workplaces %}
+        <li>
+            <h6 class="timespan">
+                <span class="from">{{ job.from }}</span> - <span class="to">{{ job.to }}</span></h6>
+            <p class="position">{{ job.position }}</p>
+            <p class="company">{{ job.company }}</p>
+            <p class="job-description">{{ job.description }}</p>
+            <p class="notes">{{ job.notes }}</p>
+        </li>
+        {% endfor %}
+    </ol>
+</section>

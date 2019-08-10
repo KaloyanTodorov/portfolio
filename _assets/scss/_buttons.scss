@@ -1,0 +1,21 @@
+$button-border-color: #000;
+$button-border-color-secondary: #CCC;
+
+$button-font-color: #EEE;
+
+.button {
+    font-weight: 600;
+    padding: 0.5em 1em;
+    color: $button-font-color;
+    border: 3px solid $button-border-color;
+    border-radius: 0.3em;
+
+    &-primary {
+        
+    }
+}
+
+.button:hover {
+    color: $button-border-color;
+    border-color: $button-border-color-secondary;
+}

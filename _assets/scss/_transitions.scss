@@ -6,3 +6,7 @@
 .social-links a:hover {
     transition: color 0.3s ease-in;
 }
+
+.button:hover {
+    transition: border-color 0.3s ease-out, color 0.4s ease-out;
+}

@@ -27,7 +27,7 @@ html {
 body, table, form, select, option, input, textarea {
     font: inherit;
     background: var(--background-color-body-default, #EEE);
-    color: var(--color-body-default, #000);
+    color: var(--color-body-default, #EEE);
 }
 
 .site-title,
@@ -60,6 +60,11 @@ ul ul, ol ul, ul ol, ol ol {
 
 ol > li > ol > li {
     list-style-type: lower-roman;
+}
+
+section {
+    margin-top: 1em;
+    padding-bottom: 2em;
 }
 
 blockquote {

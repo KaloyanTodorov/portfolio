@@ -7,7 +7,7 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="/portfolio/css/site.css">
 </head>
-<body class="page page-work" >
+<body class="page page-print" >
     <div class="site">
         
         <input type="checkbox" class="nav-toggle" id="nav-toggle">
@@ -32,7 +32,7 @@
             <a href="/portfolio/about/">About</a>
         </li>
         
-        <li  class="active-page" >
+        <li >
             <a href="/portfolio/work/">Work</a>
         </li>
         
@@ -60,7 +60,11 @@
             <a class="button go-to-print" href="/portfolio/print/">Go to Print</a>
         </section>
             
-            <section class="work-timeline">
+            <a class="button button-primary" onclick="window.print()">
+    Print!
+</a>
+
+<section class="work-timeline">
     <h2>Work experience</h2>
     <ol class="timeline">
         
@@ -102,6 +106,86 @@
         
     </ol>
 </section>
+
+<section class="education-section">
+    <h3>Education</h3>
+    
+    <ul class="education">
+        
+        <li>
+            <h6 class="school">SoftUni</h6>
+            <p class="edu-timespan">2019 - Present</p>
+            
+            <p class="degree">JavaScript Developer</p>
+            
+    
+            
+            <p class="technologies">VanillaJS, jQuery, Ajax, Async and Promises, SammyJS, Handlebars, Mocha, Bootstrap, CSS, Sass, Jekyll.</p>
+            
+    
+            
+            <p class="notes-edu">Refreshing JavaScript and Front-end knowledge.</p>
+            
+        </li>
+        
+        <li>
+            <h6 class="school">SoftUni</h6>
+            <p class="edu-timespan">2015 - 2016</p>
+            
+            <p class="degree">Software Development</p>
+            
+    
+            
+            <p class="technologies">JavaScript, PHP, Java, C#</p>
+            
+    
+            
+            <p class="notes-edu">First steps in programming. Had to drop it because of personal reasons.</p>
+            
+        </li>
+        
+        <li>
+            <h6 class="school">Sofia University</h6>
+            <p class="edu-timespan"></p>
+            
+            <p class="degree">MA, Distributed Systems and Mobile technologies</p>
+            
+    
+            
+            <p class="technologies">MS Servers configuration, Cisco routers, switches, AP configuration, System administration.</p>
+            
+    
+            
+            <p class="notes-edu">Did not finish</p>
+            
+        </li>
+        
+        <li>
+            <h6 class="school">UNWE (UNSS)</h6>
+            <p class="edu-timespan">2006 - 2010</p>
+            
+            <p class="degree">BA, Sociology and Social sciences</p>
+            
+    
+            
+    
+            
+        </li>
+        
+        <li>
+            <h6 class="school">PMG N. Obreshkov Kazanlak</h6>
+            <p class="edu-timespan">2000 - 2006</p>
+            
+    
+            
+            <p class="technologies">Maths, English, Biology, Chemistry</p>
+            
+    
+            
+        </li>
+        
+    </ul>
+</section>
         </main>
 
         
@@ -123,7 +207,7 @@
             <a href="/portfolio/about/">About</a>
         </li>
         
-        <li  class="active-page" >
+        <li >
             <a href="/portfolio/work/">Work</a>
         </li>
         

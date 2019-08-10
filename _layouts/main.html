@@ -7,11 +7,19 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
 </head>
-<body>
+<body {% if page.title %}class="page page-{{ page.title | slugify }}" {% endif %}>
     <div class="site">
+        
         {% include header.html location="header" %}
-
+        
         <main class="site-main">
+           
+        <section class="print-resume print-resume-all">
+            <h5>Print Resume</h5>
+            <p>Before printing this resume, think first about the environement!</p>
+            <a class="button go-to-print" href="{{ site.baseurl }}/print/">Go to Print</a>
+        </section>
+            
             {{ content }}
         </main>
 
