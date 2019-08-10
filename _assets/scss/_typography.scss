@@ -67,13 +67,15 @@ section {
     padding-bottom: 2em;
 }
 
-blockquote {
+blockquote,
+.jokes {
     padding: 1rem;
 }
 
 blockquote .author {
     font-style: italic;
     text-align: right;
+    color: var(--color-body-primary, #CCC);
     opacity: 0.5;
 }
 

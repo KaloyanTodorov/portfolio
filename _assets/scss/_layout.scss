@@ -8,7 +8,7 @@
         width: 100%;
     }
 
-    @include mq( mobile ) {
-        
+    @include mq( desktop ) {
+        padding: 0 1em;
     }
 }

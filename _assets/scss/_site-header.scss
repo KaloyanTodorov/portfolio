@@ -1,6 +1,7 @@
 .site-header {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     border-bottom: var(--color-border-main);
 
     & h1,

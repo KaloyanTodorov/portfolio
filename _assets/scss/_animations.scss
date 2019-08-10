@@ -1,42 +1,9 @@
-@keyframes easeOutBounce {
+@keyframes loopTransition {
 	0% {
-		transform: translateX(0%);
-	}
-
-	12% {
-		transform: translateX(-10.89%);
-	}
-
-	24% {
-		transform: translateX(-43.56%);
-	}
-
-	36% {
-		transform: translateX(-98.01%);
-	}
-
-	54% {
-		transform: translateX(-75.02%);
-	}
-
-	74% {
-		transform: translateX(-98.37%);
-	}
-
-	82% {
-		transform: translateX(-93.75%);
-	}
-
-	92% {
-		transform: translateX(-99.34%);
-	}
-
-	96% {
-		transform: translateX(-98.46%);
+		
 	}
 
 	100% {
-		transform: translateX(-100%);
-	}
 
-}
+	}
+  }
