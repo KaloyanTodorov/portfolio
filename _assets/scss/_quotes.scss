@@ -1,0 +1,41 @@
+
+.quotes,
+.quote-me {
+    padding-top: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    grid-gap: 1em;
+    
+    h4 {
+        grid-column: span 3;
+        
+    }
+
+    @include mq( tablet-portrait ) {
+        grid-template-columns: repeat(2, 0.5fr);
+
+        h4 {
+            grid-column: span 2;
+        }
+    }
+
+    @include mq( phone-large ) {
+        grid-template-columns: 1fr;
+        
+        h4 {
+            grid-column: span 1;
+        }
+    }
+
+
+    blockquote,
+    .jokes {
+        border-radius: 0.3em;
+        box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
+
+        
+        &:hover {
+            box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.85);
+        }
+    }
+}

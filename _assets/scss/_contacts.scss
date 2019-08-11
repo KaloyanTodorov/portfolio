@@ -1,0 +1,16 @@
+
+.contacts {
+    li {
+        list-style: none outside;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    a:hover {
+        text-decoration: none;
+        font-weight: 600;
+        color: var(--color-links-secondary, #000);
+    }
+}

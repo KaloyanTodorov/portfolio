@@ -158,49 +158,71 @@ section {
   padding-left: 2em;
   border-bottom: 2px solid #EEE; }
 
-.education {
+.site-footer {
+  border-top: var(--color-border-main);
+  padding-top: 2em;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2em; }
-  .education li {
-    list-style: none outside; }
-    @media (max-width: 768px) {
-      .education li {
+  grid-template-columns: repeat(2, 0.5fr);
+  align-items: center; }
+  .site-footer .site-navbar {
+    grid-row: span 2; }
+  @media (min-width: 961px) {
+    .site-footer {
+      grid-template-columns: repeat(3, 1fr); } }
+  .site-footer p {
+    padding-bottom: 0.8em; }
+  @media (max-width: 640px) {
+    .site-footer p {
+      grid-row: span 2; }
+    .site-footer .social-links-container {
+      grid-column: span 2;
+      display: flex; } }
+
+.contacts li {
+  list-style: none outside; }
+
+.contacts a {
+  text-decoration: underline; }
+
+.contacts a:hover {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--color-links-secondary, #000); }
+
+.quotes,
+.quote-me {
+  padding-top: 1.5em;
+  display: grid;
+  grid-template-columns: repeat(3, 0.5fr);
+  grid-gap: 1em; }
+  .quotes h4,
+  .quote-me h4 {
+    grid-column: span 3; }
+  @media (max-width: 768px) {
+    .quotes,
+    .quote-me {
+      grid-template-columns: repeat(2, 0.5fr); }
+      .quotes h4,
+      .quote-me h4 {
         grid-column: span 2; } }
-    .education li p {
-      padding-bottom: 0.5em; }
-    .education li .school:before {
-      content: '\f19d';
-      display: inline-block;
-      font-family: 'Font Awesome 5 Free';
-      margin-right: 1em;
-      font-style: normal; }
-    .education li .school {
-      color: var(--color-body-primary, #000);
-      font-weight: 700;
-      border-bottom: 1px solid var(--color-links-default, #EEE);
-      padding-bottom: 0.5em; }
-    .education li .edu-timespan:before {
-      content: '\f073';
-      display: inline-block;
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 500;
-      margin-right: 1em;
-      font-style: normal; }
-    .education li .edu-timespan {
-      font-style: italic; }
-    .education li .degree:before {
-      content: "Degree: ";
-      font-weight: 900;
-      color: var(--color-body-primary, #000); }
-    .education li .technologies:before {
-      content: "Techologies: ";
-      font-weight: 900;
-      color: var(--color-body-primary, #000); }
-    .education li .notes-edu:before {
-      content: "Notes: ";
-      font-weight: 900;
-      color: var(---color-body-primary, #000); }
+  @media (max-width: 640px) {
+    .quotes,
+    .quote-me {
+      grid-template-columns: 1fr; }
+      .quotes h4,
+      .quote-me h4 {
+        grid-column: span 1; } }
+  .quotes blockquote,
+  .quotes .jokes,
+  .quote-me blockquote,
+  .quote-me .jokes {
+    border-radius: 0.3em;
+    box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.75); }
+    .quotes blockquote:hover,
+    .quotes .jokes:hover,
+    .quote-me blockquote:hover,
+    .quote-me .jokes:hover {
+      box-shadow: 0px 0px 35px -1px rgba(0, 0, 0, 0.85); }
 
 .work-timeline h2 {
   padding-left: 1em; }
@@ -252,71 +274,49 @@ section {
         display: grid;
         justify-items: end; } }
 
-.quotes,
-.quote-me {
-  padding-top: 1.5em;
+.education {
   display: grid;
-  grid-template-columns: repeat(3, 0.5fr);
-  grid-gap: 1em; }
-  .quotes h4,
-  .quote-me h4 {
-    grid-column: span 3; }
-  @media (max-width: 768px) {
-    .quotes,
-    .quote-me {
-      grid-template-columns: repeat(2, 0.5fr); }
-      .quotes h4,
-      .quote-me h4 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2em; }
+  .education li {
+    list-style: none outside; }
+    @media (max-width: 768px) {
+      .education li {
         grid-column: span 2; } }
-  @media (max-width: 640px) {
-    .quotes,
-    .quote-me {
-      grid-template-columns: 1fr; }
-      .quotes h4,
-      .quote-me h4 {
-        grid-column: span 1; } }
-  .quotes blockquote,
-  .quotes .jokes,
-  .quote-me blockquote,
-  .quote-me .jokes {
-    border-radius: 0.3em;
-    box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.75); }
-    .quotes blockquote:hover,
-    .quotes .jokes:hover,
-    .quote-me blockquote:hover,
-    .quote-me .jokes:hover {
-      box-shadow: 0px 0px 35px -1px rgba(0, 0, 0, 0.85); }
-
-.contacts li {
-  list-style: none outside; }
-
-.contacts a {
-  text-decoration: underline; }
-
-.contacts a:hover {
-  text-decoration: none;
-  font-weight: 600;
-  color: var(--color-links-secondary, #000); }
-
-.site-footer {
-  border-top: var(--color-border-main);
-  padding-top: 2em;
-  display: grid;
-  grid-template-columns: repeat(2, 0.5fr);
-  align-items: center; }
-  .site-footer .site-navbar {
-    grid-row: span 2; }
-  @media (min-width: 961px) {
-    .site-footer {
-      grid-template-columns: repeat(3, 1fr); } }
-  .site-footer p {
-    padding-bottom: 0.8em; }
-  @media (max-width: 640px) {
-    .site-footer p {
-      grid-row: span 2; }
-    .site-footer .social-links-container {
-      grid-column: span 2;
-      display: flex; } }
+    .education li p {
+      padding-bottom: 0.5em; }
+    .education li .school:before {
+      content: '\f19d';
+      display: inline-block;
+      font-family: 'Font Awesome 5 Free';
+      margin-right: 1em;
+      font-style: normal; }
+    .education li .school {
+      color: var(--color-body-primary, #000);
+      font-weight: 700;
+      border-bottom: 1px solid var(--color-links-default, #EEE);
+      padding-bottom: 0.5em; }
+    .education li .edu-timespan:before {
+      content: '\f073';
+      display: inline-block;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 500;
+      margin-right: 1em;
+      font-style: normal; }
+    .education li .edu-timespan {
+      font-style: italic; }
+    .education li .degree:before {
+      content: "Degree: ";
+      font-weight: 900;
+      color: var(--color-body-primary, #000); }
+    .education li .technologies:before {
+      content: "Techologies: ";
+      font-weight: 900;
+      color: var(--color-body-primary, #000); }
+    .education li .notes-edu:before {
+      content: "Notes: ";
+      font-weight: 900;
+      color: var(---color-body-primary, #000); }
 
 .site-navbar {
   display: flex;

@@ -1,0 +1,75 @@
+
+.work-timeline h2 {
+    padding-left: 1em;
+}
+
+.timeline {
+
+    border-left: 2px solid var(--color-border-default, #000);
+    padding: 2em 0;
+
+    li:before {
+        position: absolute;
+        top: 4px; 
+        left: calc( -0.5em - 1px);
+        display: block;
+        
+        content: '';
+        width: 1em;
+        height: 1em;
+        background: #EEE;
+        border: 2px solid var(--color-border-default, #000);
+        border-radius: 50%;
+    }
+
+    li:nth-child(odd):before {
+        background: #36B;
+    }
+
+    li {
+        position: relative;
+        list-style: none outside;
+        padding-left: 2em;
+        padding-bottom: 1em;
+
+        p {
+            padding-bottom: 0.3em;
+        }
+    }
+
+    .position {
+        font-size: 1.2em;
+        font-weight: 600;
+        color: var(--color-body-primary, #000);
+    }
+    
+    .company {
+        font-style: italic;
+    }
+
+    .job-description {
+        font-size: 0.9em;
+        color: var(--color-body-primary, #000);
+    }
+
+    .notes {
+        font-size: 0.9em;
+    }
+    
+    @include mq( tablet-landscape ) {
+        margin: 0 10em;
+        position: relative;
+
+        li {
+            padding-bottom: 3em;
+        }
+
+        .timespan {
+            position: absolute;
+            top: -1.5em;
+            left: -10em;
+            display: grid;
+            justify-items: end;
+        }
+    }
+}
