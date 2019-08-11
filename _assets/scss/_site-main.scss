@@ -196,5 +196,20 @@ section {
             box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.85);
         }
     }
+}
 
+.contacts {
+    li {
+        list-style: none outside;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    a:hover {
+        text-decoration: none;
+        font-weight: 600;
+        color: var(--color-links-secondary, #000);
+    }
 }

@@ -10,6 +10,7 @@
   --color-body-default: #EEE;
   --color-body-primary: #000;
   --color-links-default: #EEE;
+  --color-links-secondary: #000;
   --color-border-main: 2px solid var(--color-body-default, #FFF);
   --color-border-default: #000;
   --spacing-layout: 2em; }
@@ -285,6 +286,17 @@ section {
     .quote-me blockquote:hover,
     .quote-me .jokes:hover {
       box-shadow: 0px 0px 35px -1px rgba(0, 0, 0, 0.85); }
+
+.contacts li {
+  list-style: none outside; }
+
+.contacts a {
+  text-decoration: underline; }
+
+.contacts a:hover {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--color-links-secondary, #000); }
 
 .site-footer {
   border-top: var(--color-border-main);
